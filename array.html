@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAY</h1>
+   <script>
+    let students=["Ahmed","sara","Eman","Megfira"]
+    document.write(students[3])
+    students[2]="Hayat"
+    document.write(students)
+     document.write(students.length)
+     students.push("Gemila");
+      document.write( "<br>"+students);
+      students.pop();
+        document.write( "<br>"+students);
+        students.unshift("jemila");
+          document.write( "<br>"+students);
+          students.shift();
+            document.write( "<br>"+students);
+            if(students.includes("Hayat")){
+                document.write("She is exit");
+            }
+            let show=students.indexOf("Megfira")
+              document.write( "<br>"+show);
+              let list=students.join(",")
+                document.write( "<br>"+list);
+                for (let i=0;i<students.length;i++){
+                      document.write( students[i] +"<br>");
+                }
+   </script> 
+</body>
+</html>
